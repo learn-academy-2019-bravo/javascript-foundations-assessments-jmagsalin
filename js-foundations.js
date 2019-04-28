@@ -1,9 +1,13 @@
 // Javascript Foundations Assessments
 
 // 1. Write an anonymous function that takes one argument of type number and decides if that number is evenly divisble by three or not. If it is, print the number and "is divisible by three" or, print the number and "is not divisble by three".
-divisibleThree = (number) => {if (number % 3 === 0) {console.log("divisible by three")}
-                              else {console.log("is not divisible by three")}
-                            }
+function divisibleThree(number){
+  if (number % 3 === 0) {console.log("divisible by three")
+    } else {console.log("is not divisible by three")
+    }
+  }
+    divisibleThree(6)
+    divisibleThree(5)
 // 2. Write an object called helloMe. Include your first_name, last_name and at least two other properties of you. Write a function that returns a description of you.
 var helloMe = {
         first_name : "Joel",
@@ -15,7 +19,8 @@ function getInfo(object){
   var data =  [object.first_name, object.last_name, object.city_living, object.high_school]
   return data
 }
-console.log(getInfo(helloMe))
+
+console.log(`Hello, My name is ${helloMe.first_name} ${helloMe.last_name}.  I live in ${helloMe.city_living} and went to ${helloMe.high_school} High School.`)
 // 3. Create an array of 5 grocery items. Write a function that returns the first, middle, and last item as a string.
 var groceryItems = ["apples", "meat", "fish" , "bread", "milk"]
 function onlyThree(array){
@@ -37,10 +42,8 @@ function numbersAnimals(array1, array2){
   var newArr = []
 for (let i=0; i < array1.length; i++)
 for (let i=0; i < array2.length; i++)
-  newArr.push(array1[i]), array2[i])
-  // }
-  // for (i = 0; i < l; i++) {
-  //   result.push(array1[i], array2[i]);
+  newArr.push(array1[i], array2[i])
+return newArr.join(" ")
 }
 console.log(numbersAnimals(nums, nouns));
 
