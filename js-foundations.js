@@ -32,7 +32,7 @@ function onlyThree(array){
 // 4. Write a function called alphabetSoup that takes an argument of "str" and return a string with the letters in alphabetical order (ie. learn becomes aelnr). Assume numbers and punctuation symbols will not be included in the parameter.
 function alphabet(string) {
     return string.split('').sort().join('')}
-    console.log("gatorade")
+    console.log(alphabet("gatorade"))
 // 5. Given the arrays below, write a function animalNums that uses a for loop to print one value from each array concatenated together.
 
 var nums = [9, 5, 88, 2, 5, 42, 57]
