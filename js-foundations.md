@@ -11,7 +11,7 @@ index is the exact location within an object, length is how long the object is
 4. What are the three parts of a for loop?
 array, new array
 5. What is a function's declaration, argument, and call?
-argument is what you put through the argument (), declaration is what you want the functin to do, call is what the function returns
+argument is what you put through the argument (), declaration is what you want the function to do, call is what the function returns
 6. What are the three main steps in saving work to github?
 git add ., git commit -m" "", git push
 7. What is the terminal command to move directories?

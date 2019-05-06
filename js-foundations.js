@@ -13,14 +13,15 @@ var helloMe = {
         first_name : "Joel",
         last_name : "Magsalin",
         city_living : "San Diego",
-        high_school : "St. Augustine"
+        high_school : "St. Augustine",
+        getInfo: function(){return `Hello, My name is ${this.first_name} ${this.last_name}.  I live in ${this.city_living} and went to ${this.high_school} High School.`}
 }
-function getInfo(object){
-  var data =  [object.first_name, object.last_name, object.city_living, object.high_school]
-  return data
+// function getInfo(object){
+//   var data =  [object.first_name, object.last_name, object.city_living, object.high_school]
+//   return data
 }
-
-console.log(`Hello, My name is ${helloMe.first_name} ${helloMe.last_name}.  I live in ${helloMe.city_living} and went to ${helloMe.high_school} High School.`)
+console.log(helloMe.getInfo());
+// console.log(`Hello, My name is ${helloMe.first_name} ${helloMe.last_name}.  I live in ${helloMe.city_living} and went to ${helloMe.high_school} High School.`)
 // 3. Create an array of 5 grocery items. Write a function that returns the first, middle, and last item as a string.
 var groceryItems = ["apples", "meat", "fish" , "bread", "milk"]
 function onlyThree(array){
@@ -39,14 +40,14 @@ var nums = [9, 5, 88, 2, 5, 42, 57]
 
 var nouns = ["ducks", "elephants", "pangolin", "rhinoceros", "giraffes", "penguins", "llamas"]
 function numbersAnimals(array1, array2){
-  var newArr = []
-for (let i=0; i < array1.length; i++)
-for (let i=0; i < array2.length; i++)
-  newArr.push(array1[i], array2[i])
-return newArr.join(" ")
+  // var newArr = []
+  for (let i=0; i < array1.length; i++){
+// for (let i=0; i < array2.length; i++)
+    console.log(`${array1[i]} ${array2[i]}`)
+  }
 }
-console.log(numbersAnimals(nums, nouns));
-
+// console.log(numbersAnimals(nums, nouns));
+numbersAnimals(nums, nouns)
 
 
 // output should be: "9 ducks", etc
